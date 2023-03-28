@@ -18,6 +18,7 @@ class BasicController extends Controller
      */
     public function index()
     {
+        
         return view('basic.list', [
             'title' => 'Basic CRUD',
             'users' => User::paginate(10)
@@ -52,7 +53,7 @@ class BasicController extends Controller
             'password' => Hash::make($request->password)
         ]);
 
-        return redirect()->route('basic.index')->with('message', 'User added successfully!');
+        return redirect()->route('basic.index')->with('message', 'User berhasil ditambahkan!');
     }
 
     /**
@@ -95,9 +96,10 @@ class BasicController extends Controller
         $basic->name = $request->name;
         $basic->last_name = $request->last_name;
         $basic->email = $request->email;
+        $basic->level = $request->level;
         $basic->save();
 
-        return redirect()->route('basic.index')->with('message', 'User updated successfully!');
+        return redirect()->route('basic.index')->with('message', 'User berhasil diupdate!');
     }
 
     /**
@@ -109,11 +111,11 @@ class BasicController extends Controller
     public function destroy(User $basic)
     {
         if (Auth::id() == $basic->getKey()) {
-            return redirect()->route('basic.index')->with('warning', 'Can not delete yourself!');
+            return redirect()->route('basic.index')->with('warning', 'Tidak bisa menghapus dirimu sendiri!');
         }
 
         $basic->delete();
 
-        return redirect()->route('basic.index')->with('message', 'User deleted successfully!');
+        return redirect()->route('basic.index')->with('message', 'User berhasil dihapus!');
     }
 }

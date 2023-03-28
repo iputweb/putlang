@@ -37,6 +37,20 @@
                 </div>
 
                 <div class="form-group">
+										<label for="level">Level</label>
+										<select class="form-select form-control @error('level') is-invalid @enderror" name="level" id="level"
+												placeholder="level" autocomplete="off" value="{{ old('level') ?? $user->level }}">
+												<option selected name="level">{{ $user->level }}</option>
+												<option value="admin">Admin</option>
+												<option value="petugas">Petugas</option>
+												<option value="masyarakat">Masyarakat</option>
+										</select>
+										@error('level')
+												<span class="text-danger">{{ $message }}</span>
+										@enderror
+								</div>
+
+                <div class="form-group">
                   <label for="password">Password</label>
                   <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" id="password" placeholder="Password" autocomplete="off">
                   @error('password')

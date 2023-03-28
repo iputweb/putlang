@@ -2,11 +2,11 @@
 
 @section('main-content')
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800">{{ $title ?? __('Blank Page') }}</h1>
+    <h1 class="h3 mb-4 text-gray-800">Pengguna</h1>
 
     <!-- Main Content goes here -->
 
-    <a href="{{ route('basic.create') }}" class="btn btn-primary mb-3">New User</a>
+    <a href="{{ route('basic.create') }}" class="btn btn-primary mb-3">+ Pengguna</a>
 
     @if (session('message'))
         <div class="alert alert-success">
@@ -18,9 +18,10 @@
         <thead>
             <tr>
                 <th>No</th>
-                <th>Full Name</th>
+                <th>Nama</th>
                 <th>Email</th>
-                <th>#</th>
+                <th>Level</th>
+                <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
@@ -29,6 +30,7 @@
                     <td scope="row">{{ $loop->iteration }}</td>
                     <td>{{ $user->full_name }}</td>
                     <td>{{ $user->email }}</td>
+                    <td>{{ $user->level }}</td>
                     <td>
                         <div class="d-flex">
                             <a href="{{ route('basic.edit', $user->id) }}" class="btn btn-sm btn-primary mr-2">Edit</a>

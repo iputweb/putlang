@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+body {
+    font-family: "Poppins", sans-serif;
+    background: #33383b;
+}
+.logo .navbar-brand {
+    width: 20%;
+}
+.navbar-brand h3::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e0ac1c;
+    transition: width 0.3s;
+}
+
+.navbar-brand h3:hover::after {
+    width: 100%;
+}
+
+bantuan {
+    margin-top: 500px;
+}
+
+.h6 {
+    color: #020202;
+}
+
+.cv {
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-width: 5px;
+}
+
+.cv img {
+    margin-bottom: 20px;
+}
+
+.card .cv {
+    border-color: skyblue;
+}
+.border {
+    background-color: #aed6f1;
+    padding-top: 70px;
+}
+
+.navbar-brand h3 {
+    color: #ffffff;
+    font: normal 36px "Poppins", sans-serif;
+    margin: 0;
+}
+
+.navbar-brand h3 span {
+    color: #e0ac1c;
+}
+
+.popular {
+    padding-bottom: 20px;
+}
+
+.carousel-contain {
+    background-color: #aed6f1;
+    height: auto;
+    color: black;
+}
+
+.profil {
+    margin-top: 120px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.setting {
+    margin-top: 40px;
+}
+
+.headreview {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    border-color: #020202;
+}
+.detil {
+    margin-top: 50px;
+}
+.headreview .form-control {
+    border-width: 1px;
+    border-color: grey;
+    border-style: solid;
+}
+.headreview h2 {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.photo-card {
+    text-decoration: none;
+}
+.headreview h6 {
+    font-size: 28px;
+}
+
+.body {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fcfcfc;
+    color: #333333;
+    transition: 0.5s;
+}
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #434343;
+    outline: none;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked {
+    background-color: #3f71ea;
+}
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.5s ease;
+}
+input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+}
+.dark {
+    background-color: #333333;
+    color: #fcfcfc;
+    transition: 0.5s ease;
+}
+.gaji .gaji {
+    border: #020202;
+    border-width: 5px;
+}
+
+.cari {
+    margin-top: 50px;
+    padding: 50px 50px 35px 50px;
+}
+
+.cari .form-control {
+    border-color: grey;
+    border-width: 1px;
+}
+
+.cari h4 {
+    font-weight: bold;
+    font-size: 28px;
+}
+.cari h6 {
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.headreview h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.karir {
+    padding: 50px 50px 60px 50px;
+    background-color: #33383b;
+    color: #e0ac1c;
+}
+.cari h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.carousel-item {
+    max-width: 100%;
+    height: auto;
+}
+
+.cards h6 {
+    color: black;
+    font-weight: bold;
+}
+
+.banner {
+    background-image: url("gabut2.jpeg") no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.brosur {
+    border-color: #333;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.brosur .brosur-karir {
+    margin-top: 500px;
+}
+
+.kartu .text {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.kartu::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.2s;
+}
+
+.kartu:hover::after {
+    width: 100%;
+}
+
+.card .text {
+    text-decoration: none;
+}
+.card .button {
+    text-decoration: none;
+}
+
+.card .text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.kontak {
+    background-color: #2d2a30;
+    background-size: cover;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    color: #fff;
+    height: auto;
+}
+
+.biodata {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #eceef1;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.3s;
+}
+
+.biodata a {
+    color: #000;
+    text-decoration: none;
+}
+
+.biodata::after {
+    transition: width 0.3s;
+}
+.biodata:hover::after {
+    width: 50%;
+}
+.biodata:hover {
+    transform: scale(1.05);
+}
+
+.biodata h5 {
+    margin-top: 15px;
+}
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 300px;
+    font-size: 35px;
+}
+
+header h2 {
+    color: #f0525f;
+}
+
+header span {
+    color: #eaa03f;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+.footer {
+    bottom: 0;
+}
+
+@media (max-height: 800px) {
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px "Poppins", sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 0px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px "Poppins", sans-serif;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.page-content {
+    background-color: #33383b;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3f71ea;
+}
+
+.footer-links a:hover {
+    color: #3f71ea;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+.nav-pills .nav-link {
+    font-weight: normal;
+    font-size: 18px;
+    color: #9191a9;
+    border-radius: 0;
+}
+.active {
+    font-weight: 500;
+    font-size: 18px;
+    color: #e0ac1c;
+    border-bottom: 3px solid #547bf0;
+}
+.card-pemain::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s;
+}
+
